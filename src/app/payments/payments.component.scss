@@ -1,0 +1,52 @@
+$secondary : #787C90;
+
+#payments{
+    padding: 10px;
+
+    h3{
+        font-weight: 400;
+    }
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+
+        #left-filter{
+            display: flex;
+            align-items: center;
+
+            select{
+                border-color: $secondary;
+                padding: 1px;
+                margin: 0 3px;
+                border-radius: 3px;
+                color: $secondary;
+            }
+        }
+
+        #search{
+            input{
+                border: none;
+                background: transparent;
+                border-bottom: 1px solid $secondary;
+            }
+        }
+    }
+
+    #data{
+        margin: 10px 0;
+        background-color: #fff;
+        table {
+            border-collapse: collapse;
+            width: 100%;
+          }
+          
+          td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+          }
+    }
+}

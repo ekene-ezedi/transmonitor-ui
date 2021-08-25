@@ -1,0 +1,21 @@
+<section id="main">
+  <app-toolbar></app-toolbar>
+  <app-sidebar></app-sidebar>
+
+  <div id="main-content">
+    <div id="transactions">
+      <app-trans-stat [title]="'Daily Transaction Volume'" [amount]="'2,342'"></app-trans-stat>
+      <app-trans-stat [title]="'Daily Transaction Value'" [amount]="'4,000,000'" [isCurrency]="true"></app-trans-stat>
+      <app-trans-stat [title]="'Total Transaction Volume'" [amount]="'452,000'"></app-trans-stat>
+      <app-trans-stat [title]="'Total Transaction Value'" [amount]="'4,000,000'" [isCurrency]="true"></app-trans-stat>
+    </div>
+
+    <div id="chart-dash">
+      <app-chart-dash></app-chart-dash>
+    </div>
+
+    <div id="payments">
+      <app-payments></app-payments>
+    </div>
+  </div>
+</section>

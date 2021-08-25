@@ -1,0 +1,39 @@
+<section id="payments">
+    <h3>Payments</h3>
+    <header>
+        <div id="left-filter">
+            <small>showing </small>
+            <select>
+                <option *ngFor="let payment of payments; let i = index">{{i}}</option>
+            </select>
+            <small>out of 500 payments</small>
+        </div>
+        <div id="search">
+            <input type="text" placeholder="search">
+        </div>
+        <div id="right-filter">
+            <small>show </small>
+            <select>
+                <option>All</option>
+                <option>Completed</option>
+                <option>Uncompleted</option> 
+            </select>
+        </div>
+    </header>
+    <div id="data">
+        <table>
+            <tr>
+                <th>Id</th>
+                <th>Userid</th>
+                <th>Title</th>
+                <th>Status</th>
+            </tr>
+            <tr *ngFor="let data of dummyData">
+                <td><small>{{data.id}}</small></td>
+                <td><small>{{data.userId}}</small></td>
+                <td><small>{{data.title}}</small></td>
+                <td><small>{{data.completed ? 'Completed' : 'Not Completed'}}</small></td>
+              </tr>
+        </table>
+    </div>
+</section>

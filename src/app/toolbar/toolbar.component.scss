@@ -1,0 +1,83 @@
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 60px;
+    z-index: 3;
+    background-color: #fff;
+
+    #navbar-brand {
+        display: flex;
+        padding: 0 20px;
+        span{
+            font-size: 20px;
+            font-weight: 900;
+            color: #1875F0;
+        }
+
+        input{
+            margin-left: 60px;
+            border: none;
+        }
+    }
+    
+    #menu{
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        ul{
+            list-style-type: none;
+    
+            li{
+                display: inline;
+                font-size: smaller;
+    
+                a{
+                    color: grey;
+                    text-decoration: none;
+                }
+
+                margin: 0 10px;
+            }
+        }
+
+        #bell{
+            margin: 0 10px;
+            width: 16.36px;
+            height: 16.36px;
+            background:url('../../assets/notification.png');
+            background-size: contain;
+
+            #badge{
+                background-color: blue;
+                width: 7px;
+                height: 7px;
+                position: relative;
+                top: -10px;
+                border-radius: 100%;
+                font-size: 6px;
+                padding: 2px;
+                color: white;
+                left: 8px;
+            }
+        }
+    }
+
+    #user{
+        display:flex;
+        align-items: center;
+        color: grey;
+        #avatar{
+            background: url('../../assets/ekene.jpg');
+            background-size: contain;
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            margin-left: 5px;
+        }
+    }
+
+}

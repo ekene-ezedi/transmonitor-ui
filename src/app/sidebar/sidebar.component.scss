@@ -1,0 +1,41 @@
+$secondary : #787C90;
+
+aside{
+    position: fixed;
+    top: 60px;
+    width: 260px;
+    height: 100vh;
+    z-index: 2;
+    background-color: #fff;
+
+    #invoice-btn{
+        width: 163px;
+        height: 33px;
+        background-color: #27AE60;
+        border: none;
+        border-radius: 30px;
+        color: white;
+        font-weight: 600;
+        margin: 20px;
+    }
+
+    #menu{
+        padding-left:40px;
+        color:$secondary;
+
+        .tab{
+            padding: 5px 0;
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+            span{
+                margin-right: 10px;
+            }
+        }
+
+
+        #payments,#merchant-profile{
+            margin: 20px 0;
+        }
+    }
+}
