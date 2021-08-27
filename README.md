@@ -1,4 +1,5 @@
 # TransMonitor
+[![Netlify Status](https://api.netlify.com/api/v1/badges/da8f3821-5b7d-4d15-b6da-4a6d612d2d36/deploy-status)](https://app.netlify.com/sites/transmonitor-ui/deploys)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.10.
 
