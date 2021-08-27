@@ -9,6 +9,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { TransStatComponent } from './trans-stat/trans-stat.component';
 import { ChartDashComponent } from './chart-dash/chart-dash.component';
 import { PaymentsComponent } from './payments/payments.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { PaymentsComponent } from './payments/payments.component';
   ],
   imports: [
     HttpClientModule,
+    FormsModule,
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule

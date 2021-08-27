@@ -4,19 +4,19 @@
         <div id="left-filter">
             <small>showing </small>
             <select>
-                <option *ngFor="let payment of payments; let i = index">{{i}}</option>
+                <option *ngFor="let number of dummyData; let i = index">{{i}}</option>
             </select>
-            <small>out of 500 payments</small>
+            <small>out of {{filteredData.length}} payments</small>
         </div>
         <div id="search">
             <input type="text" placeholder="search">
         </div>
         <div id="right-filter">
             <small>show </small>
-            <select>
-                <option>All</option>
-                <option>Completed</option>
-                <option>Uncompleted</option> 
+            <select [(ngModel)]="taskCompletionStat" #status (change)="setStatus($event,status.value)">
+                <option [value]="'all'">All</option>
+                <option [value]="'completed'">Completed</option>
+                <option [value]="'uncompleted'">Uncompleted</option> 
             </select>
         </div>
     </header>
@@ -28,7 +28,7 @@
                 <th>Title</th>
                 <th>Status</th>
             </tr>
-            <tr *ngFor="let data of dummyData">
+            <tr *ngFor="let data of filteredData">
                 <td><small>{{data.id}}</small></td>
                 <td><small>{{data.userId}}</small></td>
                 <td><small>{{data.title}}</small></td>
